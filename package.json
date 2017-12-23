@@ -1,0 +1,34 @@
+{
+  "name": "anyroute-server",
+  "version": "0.1.0",
+  "dependencies": {
+    "anyproxy": "^4.0.2",
+    "anyproxy-package-mock-response": "^1.0.2",
+    "co": "^4.6.0",
+    "koa": "^2.4.1",
+    "koa-static-server": "^1.3.2",
+    "koa-viewer": "^0.0.5",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0"
+  },
+  "bin": {
+    "anyrouter-server": "bin/anyrouter-server"
+  },
+  "engines": {
+    "node" : ">=6.0.0"
+  },
+  "license": "MIT"
+}

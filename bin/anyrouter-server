@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+'use strict';
+
+require('babel-core/register');
+
+const program = require('commander');
+const packageInfo = require('../package.json');
+const AnyProxySever = require('../src/index');
+
+program
+  .version(packageInfo.version)
+  .option('-p, --port [value]', 'the port of proxy server, default to 8080')
+  .option('-d, --dir [value]', 'the directory you want to serve')
+  .option('-c, --config [value]', 'the file of config file')
+  .parse(process.argv);
+
+const anyProxyServer = new AnyProxySever({
+  config: program.config,
+  port: program.port,
+  directory: program.dir
+});
+
+anyProxyServer.start();
