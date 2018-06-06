@@ -2,11 +2,9 @@
 
 'use strict';
 
-require('babel-core/register');
-
 const program = require('commander');
 const packageInfo = require('../package.json');
-const AnyProxySever = require('../src/index');
+const AnyProxySever = require('../dist/index');
 
 program
   .version(packageInfo.version)
